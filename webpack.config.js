@@ -35,7 +35,7 @@ Encore
 	.addEntry('index', '/src/index/index.js')
 
 	.copyFiles({
-		from: './assets',
+		from: './dev/assets',
 		to: 'assets/[path][name].[ext]'
 	})
 	.copyFiles({
@@ -82,12 +82,6 @@ Encore
 	.enableTypeScriptLoader(function (tsConfig) {
 		tsConfig = require('./tsconfig.json')
 	})
-
-	/**
-	 * This one adds browser prefix for CSS classes.
-	 * Useful for loading fonts depending on browser list in package.json
-	 */
-	.enablePostCssLoader()
 
 /**
  * This is how you get the raw webpack configuration to tweak it further beyond @symfony/encore's capabilities.
