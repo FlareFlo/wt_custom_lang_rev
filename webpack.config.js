@@ -39,6 +39,10 @@ Encore
 		to: 'assets/[path][name].[ext]'
 	})
 	.copyFiles({
+		from: './scss/out',
+		to: 'css/[path][name].[ext]'
+	})
+	.copyFiles({
 		from: './dev'
 	})
 

@@ -1,10 +1,10 @@
 {
-  "name": " tauri_learning",
+  "name": "wt_custom_lang_rev",
   "main": "dist/index.html",
   "scripts": {
-    "build": "encore production && sass --no-source-map scss:dist/css && tauri build",
+    "build": "encore production && sass --no-source-map scss/in:scss/out && tauri build",
     "dev": "encore dev &&  tauri dev",
-    "sass_watch": "sass --watch scss:dist/css"
+    "sass_watch": "sass scss/in:scss/out && sass --watch scss/in:scss/out"
   },
   "dependencies": {
     "@symfony/webpack-encore": "^2.1.0",
