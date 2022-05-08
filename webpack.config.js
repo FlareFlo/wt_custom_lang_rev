@@ -22,18 +22,9 @@ Encore
 	// public path used by the web server to access the output path
 	.setPublicPath('/')
 
-	/*
-	 * ENTRY CONFIG
-	 *
-	 * Add 1 entry for each "page" of your app
-	 * (including one that's included on every page - e.g. "app")
-	 *
-	 * Each entry will result in one JavaScript file (e.g. app.js)
-	 * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
-	 */
-	// .addEntry('mario', './src/main.ts')
-	.addEntry('index', '/src/index/index.js')
-	.addEntry('entries', '/src/index/entries.js')
+	.addEntry('index', '/src/index.js')
+	.addEntry('entries', '/src/entries.js')
+	.addEntry('replace_header', '/src/replace_header.js')
 
 	.copyFiles({
 		from: './dev/assets',

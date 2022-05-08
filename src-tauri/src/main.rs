@@ -13,6 +13,7 @@ pub mod config;
 pub mod storage;
 pub mod lang_manipulation;
 pub mod cache;
+mod dom;
 
 use std::fs;
 use tauri::Manager;
