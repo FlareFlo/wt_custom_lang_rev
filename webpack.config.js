@@ -33,6 +33,7 @@ Encore
 	 */
 	// .addEntry('mario', './src/main.ts')
 	.addEntry('index', '/src/index/index.js')
+	.addEntry('entries', '/src/index/entries.js')
 
 	.copyFiles({
 		from: './dev/assets',
